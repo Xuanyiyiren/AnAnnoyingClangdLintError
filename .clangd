@@ -1,2 +1,2 @@
 CompileFlags:
-  Add: [-I/home/shwan/cudaOldHead]
+  Add: [-I./include_oldcuda]
