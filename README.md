@@ -1,4 +1,4 @@
-# A very annoying lint error.
+# A very annoying lint error of `clangd`
 
 Recently, I am getting learning about Linux and Cuda. I am using archlinux which is a rolling release distro, so every package on my system is the latest version.
 
