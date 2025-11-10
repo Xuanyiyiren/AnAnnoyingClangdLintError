@@ -4,7 +4,7 @@ Recently, I am getting learning about Linux and Cuda. I am using archlinux which
 
 When I develop Cuda code using VSCode, I often get the following lint error:
 
-![](./figs/2025-11-10_22-33.png)
+![](./figs/WrongLint.png)
 
 This is a very strange error. How can such a simple insertion operator `<<` cause an error?
 
@@ -17,3 +17,7 @@ After the CUDA toolkit move to version 13, NVIDIA quietly removed the legacy hea
 However, a very simple solution is to include the missing header file manually. By adding a empty header file `texture_fetch_functions.h` somewhere in the include path, the lint error disappears.
 
 See my `.clangd` file and the empty header file in `./include_oldcuda` in this repository for details.
+
+After applying this fix, the lint error is gone:
+
+![](./figs/RightLint.png)
