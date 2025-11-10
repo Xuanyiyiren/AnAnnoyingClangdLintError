@@ -1,9 +1,2 @@
 CompileFlags:
-  Remove:
-    - "-forward-unknown-to-host-compiler"
-    - "--generate-code=arch=compute_75,code=[compute_75,sm_75]"
-  Add:
-    - "--cuda-path=/opt/cuda"
-    - "--cuda-gpu-arch=sm_75"
-    - "-I/home/shwan/cudaOldHead"
-    - "-std=c++17"
+  Add: [-I/home/shwan/cudaOldHead]
